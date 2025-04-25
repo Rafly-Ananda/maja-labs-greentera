@@ -1,17 +1,45 @@
-import LogoTransition from '@/assets/logo-offset.svg';
+import LogoTransition from '@/assets/terra-logo.png';
 import projectImage from '@/assets/carbon-projects.png';
 import Point from '@/assets/point.svg';
+import ablLogo from '@/assets/abl-logo.png';
+import majaCorpLogo from '@/assets/maja-corp.png';
+
+import nft_1 from '@/assets/nfts/41.png';
+import nft_2 from '@/assets/nfts/42.png';
+import nft_3 from '@/assets/nfts/43.png';
+import nft_4 from '@/assets/nfts/44.png';
+import nft_5 from '@/assets/nfts/45.png';
+import nft_6 from '@/assets/nfts/46.png';
+import nft_7 from '@/assets/nfts/47.png';
+import nft_8 from '@/assets/nfts/48.png';
+import nft_9 from '@/assets/nfts/49.png';
+import nft_10 from '@/assets/nfts/50.png';
+
+import { HiArrowSmallRight } from 'react-icons/hi2';
 
 import Image from 'next/image';
 
 import VoteCard from '@/components/VoteCard';
 
 const voteContent = [
-  'Distribution of tokenized carbon credits, including airdrops',
-  'Carbon Tokens Markets Operations',
-  'Participation in the new mangrove restoration projects',
-  'Development of the Mangrove DAO',
-  'Issuance of new Mangrove tokens to crowdfund new restoration projects'
+  'Mangrove planting linked to digital tokens',
+  'Environmental restoration through blockchain transparencys',
+  'Collaboration between Maja Labs, Arunika',
+  'Public engagement for sustainable future',
+  'Launch event at Angke-Kapuk, Jakarta'
+];
+
+const nftImages = [
+  nft_1,
+  nft_2,
+  nft_3,
+  nft_4,
+  nft_5,
+  nft_6,
+  nft_7,
+  nft_8,
+  nft_9,
+  nft_10
 ];
 
 export default function Home() {
@@ -21,38 +49,50 @@ export default function Home() {
       <div className="pt-[50px] lg:pt-[85px]"></div>
 
       {/* Main Section */}
-      <div className="bg-[#f3f3fe] rounded-xl flex items-center justify-center flex-col text-center lg:pt-28 lg:px-28 lg:pb-16 p-5">
+      <div className="bg-[#f5dfeb] rounded-xl flex items-center justify-center flex-col text-center lg:pt-28 lg:px-20 lg:pb-16 p-5">
         <ul className="font-[family-name:var(--font-playfair)] text-[24px] lg:text-6xl text-[#222533] hidden lg:block">
-          <li>Mangrove DAO is focused</li>
-          <li>on restoration of degraded</li>
-          <li>mangrove habitats in</li>
-          <li>myanmar and globally</li>
+          <li>Driving mangrove restoration</li>
+          <li>with blockchain-powered</li>
+          <li>community action</li>
+          <li>Indonesia and globally</li>
         </ul>
 
         <ul className="font-[family-name:var(--font-playfair)] text-[24px] lg:text-6xl text-[#222533] lg:hidden">
-          <li>Mangrove DAO is focused on</li>
-          <li>restoration of degraded mangrove</li>
-          <li>habitats in myanmar and globally</li>
+          <li>Driving mangrove restoration</li>
+          <li>with blockchain-powered</li>
+          <li>community action</li>
+          <li>Indonesia and globally</li>
         </ul>
 
         <p className="font-[family-name:var(--font-montserrat)] mt-5 lg:mt-20 text-[14px] lg:text-xl">
-          Mangrove DAO is a Decentralized Autonomous Organization. It implements
-          novel governance mechanisms to empower the community of TREE coin
-          holders.
+          Mangrove-Backed Token is a community-driven initiative. Through
+          innovative governance mechanisms, it empowers participants to take
+          active roles in environmental restoration using blockchain technology.
         </p>
 
-        <ul className="font-[family-name:var(--font-montserrat)] flex mt-5 lg:mt-16 uppercase text-[10px] lg:text-sm">
+        <div className="font-[family-name:var(--font-montserrat)] flex gap-10 mt-5 lg:mt-16 uppercase text-[10px] lg:text-sm">
           <div className="flex flex-col items-center gap-4">
-            <li className="hover:cursor-1ter">read the full tree coin story</li>
-            <li className="hover:cursor-pointer">wif commitment</li>
+            <div className="hover:cursor-pointer flex items-center justify-center gap-2">
+              <HiArrowSmallRight className="text-xl" />
+              read the full story
+            </div>
+            <div className="hover:cursor-pointer flex items-center justify-center gap-2">
+              <HiArrowSmallRight className="text-xl" />
+              commitment
+            </div>
           </div>
+
           <div className="flex flex-col gap-4">
-            <li className="hover:cursor-pointer">how to hold tokens?</li>
-            <li className="hover:cursor-pointer">
-              how to trade mangroe tokens
-            </li>
+            <div className="hover:cursor-pointer flex items-center justify-center gap-2">
+              <HiArrowSmallRight className="text-xl" />
+              how to hold tokens?
+            </div>
+            <div className="hover:cursor-pointer flex items-center justify-center gap-2">
+              <HiArrowSmallRight className="text-xl" />
+              how to trade tokens
+            </div>
           </div>
-        </ul>
+        </div>
       </div>
 
       {/* Token Explanation */}
@@ -62,11 +102,11 @@ export default function Home() {
         </div>
 
         <ul className="font-[family-name:var(--font-playfair)] text-[20px] lg:text-4xl text-center text-[#222533] lg:leading-12 mt-6">
-          <li>MANGROVE token is the new digital</li>
-          <li>representation of 1 planted mangrove in</li>
-          <li>the TREE coin project and the governance</li>
-          <li>token of the Mangrove DAO. It is issued on</li>
-          <li>Polygon blockchain.</li>
+          <li>Mangrove-Backed Token is a joint project</li>
+          <li>by Maja Labs and Arunika Bumi Lestari.</li>
+          <li>Each token represents one planted mangrove.</li>
+          <li>It uses blockchain for transparency and</li>
+          <li>promotes climate action and education.</li>
         </ul>
 
         <p className="font-[family-name:var(--font-montserrat)] text-[14px] lg:text-xl lg:mt-32 mt-10">
@@ -83,16 +123,35 @@ export default function Home() {
 
         <div className="font-[family-name:var(--font-montserrat)] lg:w-[60%] mt-10 grid grid-cols-1 gap-5 lg:text-base text-[14px]">
           <p>
-            Verified carbon credits will be tokenized by WIF or by an appointed
-            agent on behalf of WIF using Toucan Bridge, as fractionalized NFT
-            tokens (TCO2-VCS-1764-2020).
+            Maja Labs and Arunika Bumi Lestari are launching a mangrove-backed
+            token to support coastal restoration with blockchain transparency.
+            Each token represents one planted mangrove and encourages public
+            action for the planet.
           </p>
 
           <p>
-            Blue Carbon Reference Token pool will be launched to represent 1
-            generic VCU of Blue Carbon. The liquidity pool for Blue Carbon token
-            will then be listed and traded on Sushiswap.
+            The project will be introduced at the TERA Batch-3 event on April
+            26, 2025, in Angke-Kapuk, Jakarta. It aims to inspire sustainable
+            living and youth engagement through real-world impact and digital
+            innovation.
           </p>
+        </div>
+      </div>
+
+      <div className="mt-10 flex items-center justify-center flex-col rounded-xl lg:p-16">
+        <h1 className="font-[family-name:var(--font-playfair)] text-[22px] lg:text-5xl text-center">
+          Featured NFTs
+        </h1>
+
+        <div className="grid grid-cols-5 grid-rows-2 gap-5 mt-10">
+          {nftImages.map((e, i) => (
+            <div
+              key={i}
+              className="lg:w-[205px] lg:h-[287px] w-[191px] h-[191px] relative"
+            >
+              <Image src={e} layout="fill" alt="nft" className=" rounded-xl" />
+            </div>
+          ))}
         </div>
       </div>
 
@@ -104,80 +163,43 @@ export default function Home() {
           </h1>
         </div>
 
-        <ul className="grid lg:grid-cols-3 lg:grid-rows-3 grid-cols-1 w-full lg:mt-10 mt-5 font-[family-name:var(--font-hanken)] uppercase font-light text-sm gap:5 lg:gap-10">
+        <ul className="grid lg:grid-cols-2 lg:grid-rows-2 grid-cols-1 w-full lg:mt-10 mt-5 font-[family-name:var(--font-hanken)] uppercase font-light text-sm gap:5 lg:gap-10">
           <li>
             <div className="flex flex-col gap-2">
-              <span className="text-[10px] lg:text-base">web-sites</span>
+              <span className="text-[10px] lg:text-base">
+                REAL-WORLD ACTION
+              </span>
               <span className="font-[family-name:var(--font-playfair)] font-medium lg:text-2xl lowercase text-[16px]">
-                mangrovedao.earth
+                Mangrove planting at Hutan Lindung Angke-Kapuk, Jakarta
               </span>
             </div>
           </li>
           <li>
             <div className="flex flex-col gap-2">
-              <span className="text-[10px] lg:text-base">dao voting</span>
+              <span className="text-[10px] lg:text-base">LAUNCH EVENT</span>
               <span className="font-[family-name:var(--font-playfair)] font-medium lg:text-2xl lowercase text-[16px]">
-                Snapshot
-              </span>
-            </div>
-          </li>
-          <li>
-            <div className="flex flex-col gap-2">
-              <span className="text-[10px] lg:text-base">dao treasury</span>
-              <span className="font-[family-name:var(--font-playfair)] font-medium lg:text-2xl lowercase text-[16px]">
-                GnosisSafe multisig
-              </span>
-            </div>
-          </li>
-          <li>
-            <div className="flex flex-col gap-2">
-              <span className="text-[10px] lg:text-base">ethereum ens</span>
-              <span className="font-[family-name:var(--font-playfair)] font-medium lg:text-2xl lowercase text-[16px]">
-                mangrovedao.earth
+                TERA Batch-3, April 26, 2025
               </span>
             </div>
           </li>
           <li>
             <div className="flex flex-col gap-2">
               <span className="text-[10px] lg:text-base">
-                tco2 tokenization
+                PARTNER ORGANIZATIONS
               </span>
               <span className="font-[family-name:var(--font-playfair)] font-medium lg:text-2xl lowercase text-[16px]">
-                toucan bridge
-              </span>
-            </div>
-          </li>
-          <li>
-            <div className="flex flex-col gap-2">
-              <span className="text-[10px] lg:text-base">liquidity pool</span>
-              <span className="font-[family-name:var(--font-playfair)] font-medium lg:text-2xl lowercase text-[16px]">
-                mangrove/usdc
+                PT Arunika Bumi Lestari, Maja Labs
               </span>
             </div>
           </li>
           <li>
             <div className="flex flex-col gap-2">
               <span className="text-[10px] lg:text-base">
-                dao communications
+                PROGRAM OBJECTIVE
               </span>
               <span className="font-[family-name:var(--font-playfair)] font-medium lg:text-2xl lowercase text-[16px]">
-                D iscord
-              </span>
-            </div>
-          </li>
-          <li>
-            <div className="flex flex-col gap-2">
-              <span className="text-[10px] lg:text-base">social media</span>
-              <span className="font-[family-name:var(--font-playfair)] font-medium lg:text-2xl lowercase text-[16px]">
-                Medium
-              </span>
-            </div>
-          </li>
-          <li>
-            <div className="flex flex-col gap-2">
-              <span className="text-[10px] lg:text-base">reference token</span>
-              <span className="font-[family-name:var(--font-playfair)] font-medium lg:text-2xl lowercase text-[16px]">
-                MRT
+                To promote sustainable coastal restoration and youth
+                environmental engagemen
               </span>
             </div>
           </li>
@@ -237,29 +259,37 @@ export default function Home() {
         <div>
           <div className="w-full lg:w-[60%] px-4 lg:pt-20 pt-5">
             <h1 className="font-[family-name:var(--font-playfair)] text-[22px] lg:text-5xl text-center">
-              Mangrove Project
+              Mangrove-Backed Token Project
             </h1>
 
             <div className="font-[family-name:var(--font-hanken)] mt-10 font-light">
               <p className="lg:text-2xl text-[14px]">
-                The project replants severely degraded mangroves in the
-                Ayeyarwady region of Myanmar. The project&apos;s developer is
-                Worldview International Foundation, one of the world&apos;s most
-                respected eco heroes. Founded in 1979, it established national
-                parks in Myanmar and Sri Lanka, planted tens of millions of
-                trees, and provided hundreds of jobs on a regular basis.
+                The Mangrove-Backed Token project is a collaborative
+                environmental initiative between Maja Labs and Arunika Bumi
+                Lestari that bridges ecological restoration with blockchain
+                technology. At its core, this project empowers the public to
+                take part in meaningful climate action by symbolically adopting
+                mangrove trees through digital tokens. Each token represents a
+                real mangrove planted, functioning not only as a symbol of
+                individual commitment to the planet but also as a transparent
+                and traceable record of environmental contribution, powered by
+                blockchain.
               </p>
 
               <p className="text-[14px] lg:text-[19px] lg:mt-10 mt-5">
-                To ensure the project&apos;s long term sustainability, WIF uses
-                a community-based model to educate and employ locals, to provide
-                scholarships and help schools, to support families and gender
-                equality.
+                By integrating technology with sustainability, the project aims
+                to inspire a new generation to participate in the healing of
+                Earth. Beyond environmental restoration, it serves as a movement
+                to shift public behavior toward conscious living — connecting
+                creativity, technology, and nature. Through collaborations with
+                artists, community leaders, and eco-advocates, this initiative
+                amplifies awareness and builds a collective legacy rooted in
+                climate responsibility.
               </p>
 
-              <p className="uppercase mt-10 font-medium lg:text-base text-[10px]">
+              {/* <p className="uppercase mt-10 font-medium lg:text-base text-[10px]">
                 verra project page
-              </p>
+              </p> */}
             </div>
           </div>
 
@@ -276,7 +306,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-white lg:mt-60 mt-10 w-full h-full rounded-xl p-10">
+        <div className="bg-white lg:mt-14 mt-10 w-full h-full rounded-xl p-10">
           <h2 className="font-[family-name:var(--font-playfair)] text-[16px] lg:text-2xl">
             Project carbon curve
           </h2>
@@ -284,7 +314,7 @@ export default function Home() {
           <ul className="flex items-center justify-center mt-10 text-5xl gap-10 font-[family-name:var(--font-montserrat)] font-medium">
             <li className="flex flex-col">
               <span className="text-[#186f64] lg:text-[48px] text-[24px] font-[family-name:var(--font-hanken)]">
-                3,680,126
+                1,509,0999
               </span>
               <span className="uppercase text-sm mt-4 font-[family-name:var(--font-hanken)] font-light lg:text-[14px]">
                 total estimated
@@ -292,7 +322,7 @@ export default function Home() {
             </li>
             <li className="flex flex-col">
               <span className="text-[#e85531] lg:text-[48px] text-[24px] font-[family-name:var(--font-hanken)]">
-                165,865
+                109,017
               </span>
               <span className="uppercase text-sm mt-4 font-[family-name:var(--font-hanken)] font-light lg:text-[14px]">
                 total issued
@@ -304,14 +334,18 @@ export default function Home() {
         <div className="lg:w-[65%] px-4 lg:pt-10">
           <div className="font-[family-name:var(--font-hanken)] mt-10 font-light">
             <p className="text-[14px] lg:text-[19px] mt-10">
-              The confirmed commitment from WIF is to pledge 8% of all the total
-              carbon yield value (post Verra buffer) to Mangrove DAO starting
-              from the 2021 vintage. 4331 tonnes were transferred in 2022, out
-              of which 4200 tonnes were tokenized (subject to 3% tokenization
-              fee)
+              The program aims to raise stakeholder awareness about sustainable
+              rehabilitation and restoration efforts led by PT ABL and Maja
+              Corp. It seeks to demonstrate their commitment to environmental
+              stewardship and future generations through collective climate
+              action. By highlighting the TERA program's scalability, it
+              encourages replication in other coastal areas across Indonesia.
+              The initiative also empowers Gen Z to stay engaged in
+              environmental issues and fosters discussions for innovative,
+              long-term solutions to protect the planet.
             </p>
 
-            <p className="uppercase mt-10 font-medium lg:text-base text-[10px]">
+            <p className="hover:cursor-pointer uppercase mt-10 font-medium lg:text-base text-[10px]">
               Public pledge
             </p>
           </div>
@@ -326,116 +360,96 @@ export default function Home() {
 
         <ul className="mt-5 lg:mt-20 w-fit">
           {/* Milestone 1 */}
-          <li className="grid grid-cols-[auto_1fr]">
-            <div className="text-[#704ddc] font-[family-name:var(--font-playfair)] text-[15px] lg:text-3xl lg:mr-20 mr-5 font-semibold w-[10%]">
-              2017
+          <li className="flex">
+            <div className="text-[#f291c9] font-[family-name:var(--font-playfair)] text-[15px] lg:text-3xl lg:mr-20 mr-5 font-semibold w-[100px]">
+              Current
             </div>
-            <div className="font-[family-name:var(--font-hanken)] lg:gap-6 font-light lg:text-[24px] text-[14px] flex items-center justify-start gap-2">
-              <div className="lg:min-w-[20px] lg:min-h-[20px] w-[10px] h-[10px] relative flex items-center justify-center">
-                <Image src={Point} layout="fill" alt="Point Logo" />
+            <div className="font-[family-name:var(--font-hanken)] lg:text-[24px] text-[14px] font-light flex flex-col items-start justify-start gap-2">
+              <div className="flex items-center justify-start gap-2 lg:gap-6 font-light">
+                <div className="lg:min-w-[20px] lg:min-h-[20px] min-w-[10px] min-h-[10px] relative flex items-center justify-center">
+                  <Image src={Point} layout="fill" alt="Point Logo" />
+                </div>
+                Public introduction of the project through TERA Batch-3 event
+                (April 26, 2025).
               </div>
-              TREE coins issued and listed on Lykke Exchange
+
+              <div className="flex items-center justify-start gap-2 lg:gap-6 font-light">
+                <div className="lg:min-w-[20px] lg:min-h-[20px] min-w-[10px] min-h-[10px] relative flex items-center justify-center">
+                  <Image src={Point} layout="fill" alt="Point Logo" />
+                </div>
+                Symbolic mangrove planting ceremony to align with initial batch
+                of token issuance.
+              </div>
+
+              <div className="flex items-center justify-start gap-2 lg:gap-6 font-light">
+                <div className="lg:min-w-[20px] lg:min-h-[20px] min-w-[10px] min-h-[10px] relative flex items-center justify-center">
+                  <Image src={Point} layout="fill" alt="Point Logo" />
+                </div>
+                Public education and media exposure (online media coverage,
+                engagement with Gen Z, NGOs, and corporates).
+              </div>
             </div>
           </li>
 
           {/* Milestone 2 */}
-          <li className="grid grid-cols-[auto_1fr] mt-10">
-            <div className="text-[#704ddc] font-[family-name:var(--font-playfair)] text-[15px] lg:text-3xl lg:mr-20 mr-5 font-semibold w-[10%]">
-              2018
+          <li className="flex mt-5">
+            <div className="text-[#f291c9] font-[family-name:var(--font-playfair)] text-[15px] lg:text-3xl lg:mr-20 mr-5 font-semibold w-[100px]">
+              Next
             </div>
-            <div className="font-[family-name:var(--font-hanken)] lg:gap-6 font-light lg:text-[24px] text-[14px] flex items-center justify-start gap-2">
-              <div className="lg:min-w-[20px] lg:min-h-[20px] w-[10px] h-[10px] relative flex items-center justify-center">
-                <Image src={Point} layout="fill" alt="Point Logo" />
+            <div className="font-[family-name:var(--font-hanken)] lg:text-[24px] text-[14px] font-light flex flex-col items-start justify-start gap-2">
+              <div className="flex items-center justify-start gap-2 lg:gap-6 font-light">
+                <div className="lg:min-w-[20px] lg:min-h-[20px] min-w-[10px] min-h-[10px] relative flex items-center justify-center">
+                  <Image src={Point} layout="fill" alt="Point Logo" />
+                </div>
+                Scaling the planting program toward the full goal mangrove
+                planting target.
               </div>
-              WIF mangrove restoration project registered by Verra
+
+              <div className="flex items-center justify-start gap-2 lg:gap-6 font-light">
+                <div className="lg:min-w-[20px] lg:min-h-[20px] min-w-[10px] min-h-[10px] relative flex items-center justify-center">
+                  <Image src={Point} layout="fill" alt="Point Logo" />
+                </div>
+                Continued issuance of MANGROVE tokens to match verified planting
+                efforts.
+              </div>
+
+              <div className="flex items-center justify-start gap-2 lg:gap-6 font-light">
+                <div className="lg:min-w-[20px] lg:min-h-[20px] min-w-[10px] min-h-[10px] relative flex items-center justify-center">
+                  <Image src={Point} layout="fill" alt="Point Logo" />
+                </div>
+                Integration of token holders into a DAO (governance, voting on
+                new locations, etc.).
+              </div>
             </div>
           </li>
 
           {/* Milestone 3 */}
-          <li className="grid grid-cols-[auto_1fr] mt-10">
-            <div className="text-[#704ddc] font-[family-name:var(--font-playfair)] text-[15px] lg:text-3xl lg:mr-20 mr-5 font-semibold w-[10%]">
-              2021
+          <li className="flex mt-5">
+            <div className="text-[#f291c9] font-[family-name:var(--font-playfair)] text-[15px] lg:text-3xl lg:mr-20 mr-5 font-semibold w-[100px]">
+              Future
             </div>
             <div className="font-[family-name:var(--font-hanken)] lg:text-[24px] text-[14px] font-light flex flex-col items-start justify-start gap-2">
               <div className="flex items-center justify-start gap-2 lg:gap-6 font-light">
                 <div className="lg:min-w-[20px] lg:min-h-[20px] min-w-[10px] min-h-[10px] relative flex items-center justify-center">
                   <Image src={Point} layout="fill" alt="Point Logo" />
                 </div>
-                December 2, 2021. Lykke delisting announced.
+                Onboarding international stakeholders and funders.
               </div>
 
               <div className="flex items-center justify-start gap-2 lg:gap-6 font-light">
                 <div className="lg:min-w-[20px] lg:min-h-[20px] min-w-[10px] min-h-[10px] relative flex items-center justify-center">
                   <Image src={Point} layout="fill" alt="Point Logo" />
                 </div>
-                January 2, 2022. Migration from Lykke ended. The later requests
-                will be considered on an ad hoc basis.
-              </div>
-            </div>
-          </li>
-
-          {/* Milestone 4 */}
-          <li className="grid grid-cols-[auto_1fr] mt-10">
-            <div className="text-[#704ddc] font-[family-name:var(--font-playfair)] text-[15px] lg:text-3xl lg:mr-20 mr-5 font-semibold w-[10%]">
-              2022
-            </div>
-            <div className="font-[family-name:var(--font-hanken)] lg:text-[24px] text-[14px] font-light flex flex-col items-start justify-start gap-2">
-              <div className="flex items-center justify-start gap-2 lg:gap-6 font-light">
-                <div className="lg:min-w-[20px] lg:min-h-[20px] min-w-[10px] min-h-[10px] relative flex items-center justify-center">
-                  <Image src={Point} layout="fill" alt="Point Logo" />
-                </div>
-                GnosisSafe Multisig created
+                Adding more features to the token (e.g., staking, carbon credit
+                linkage, exclusive content).
               </div>
 
               <div className="flex items-center justify-start gap-2 lg:gap-6 font-light">
                 <div className="lg:min-w-[20px] lg:min-h-[20px] min-w-[10px] min-h-[10px] relative flex items-center justify-center">
                   <Image src={Point} layout="fill" alt="Point Logo" />
                 </div>
-                Interim treasury holders elected
-              </div>
-
-              <div className="flex items-center justify-start gap-2 lg:gap-6 font-light">
-                <div className="lg:min-w-[20px] lg:min-h-[20px] min-w-[10px] min-h-[10px] relative flex items-center justify-center">
-                  <Image src={Point} layout="fill" alt="Point Logo" />
-                </div>
-                First Blue Carbon credits tokenized and sent to the Treasury
-              </div>
-
-              <div className="flex items-center justify-start gap-2 lg:gap-6 font-light">
-                <div className="lg:min-w-[20px] lg:min-h-[20px] min-w-[10px] min-h-[10px] relative flex items-center justify-center">
-                  <Image src={Point} layout="fill" alt="Point Logo" />
-                </div>
-                Mangrove Removal Tonne on Toucan Protocol
-              </div>
-
-              <div className="flex items-center justify-start gap-2 lg:gap-6 font-light">
-                <div className="lg:min-w-[20px] lg:min-h-[20px] min-w-[10px] min-h-[10px] relative flex items-center justify-center">
-                  <Image src={Point} layout="fill" alt="Point Logo" />
-                </div>
-                Treasury distribution proposals DAO voting
-              </div>
-            </div>
-          </li>
-
-          {/* Milestone 5 */}
-          <li className="grid grid-cols-[auto_1fr] mt-10">
-            <div className="text-[#704ddc] font-[family-name:var(--font-playfair)] text-[15px] lg:text-3xl lg:mr-20 mr-5 font-semibold w-[10%]">
-              2022
-            </div>
-            <div className="font-[family-name:var(--font-hanken)] lg:text-[24px] text-[14px] font-light flex flex-col items-start justify-start gap-2">
-              <div className="flex items-center justify-start gap-2 lg:gap-6 font-light">
-                <div className="lg:min-w-[20px] lg:min-h-[20px] min-w-[10px] min-h-[10px] relative flex items-center justify-center">
-                  <Image src={Point} layout="fill" alt="Point Logo" />
-                </div>
-                Migration of the Treasury to SafeSnap or similar mechanism
-                allowing direct distribution of funds based on DAO voting
-              </div>
-
-              <div className="flex items-center justify-start gap-2 lg:gap-6 font-light">
-                <div className="lg:min-w-[20px] lg:min-h-[20px] min-w-[10px] min-h-[10px] relative flex items-center justify-center">
-                  <Image src={Point} layout="fill" alt="Point Logo" />
-                </div>
-                Mangrove DAO development
+                Replicating the model in other coastal areas in Indonesia or
+                globally.
               </div>
             </div>
           </li>
@@ -447,12 +461,17 @@ export default function Home() {
         <h1 className="font-[family-name:var(--font-playfair)] text-[22px] lg:text-5xl text-center">
           Powered By
         </h1>
+
+        <div className="flex m-10 items-center justify-center gap-10">
+          <Image src={ablLogo} width={150} height={100} alt="abl logo" />
+          <Image src={majaCorpLogo} width={250} height={100} alt="maja corp" />
+        </div>
       </div>
 
       {/* Footer */}
       <div className="mt-5 lg:mt-14 h-[100px] flex items-center justify-center lg:just-between">
         <h4 className="font-[family-name:var(--font-hanken)] text-[12px] lg:text-lg font-light hidden lg:block">
-          &copy; 2025 Mangrove DAO. All rights reserved.
+          &copy; 2025 Greenterra Project. All rights reserved.
         </h4>
 
         <ul className="flex flex-col items-center justify-center font-[family-name:var(--font-hanken)] text-[12px] lg:text-lg font-light lg:hidden">
