@@ -106,7 +106,7 @@ const Navbar = () => {
 
               <li className="absolute bottom-6">
                 <ul className="flex flex-col items-center justify-center font-[family-name:var(--font-hanken)] text-[12px] lg:text-lg font-light lg:hidden">
-                  <li>&copy; 2025 Mangrove DAO.</li>
+                  <li>&copy; 2025 Greenterra Project.</li>
                   <li>All rights reserved.</li>
                 </ul>
               </li>
