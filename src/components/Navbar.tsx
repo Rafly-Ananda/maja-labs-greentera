@@ -12,10 +12,6 @@ const navLinks = ['about', 'details', 'mangrove project', 'roadmap'];
 const Navbar = () => {
   const [burgerClicked, setBurgerClicked] = useState<boolean>(false);
 
-  const burgerNavToggle = () => {
-    setBurgerClicked((prev) => !prev);
-  };
-
   useEffect(() => {
     setBurgerClicked(false);
   }, []);

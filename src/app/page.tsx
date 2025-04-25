@@ -75,8 +75,8 @@ export default function Home() {
 
         <ul className="grid lg:grid-cols-5 lg:gap-6 lg:mst-16 mt-10 grid-cols-2 gap-4">
           {voteContent.map((e, i) => (
-            <li>
-              <VoteCard content={e} key={e + i} />
+            <li key={e + i}>
+              <VoteCard content={e} />
             </li>
           ))}
         </ul>
@@ -243,16 +243,16 @@ export default function Home() {
             <div className="font-[family-name:var(--font-hanken)] mt-10 font-light">
               <p className="lg:text-2xl text-[14px]">
                 The project replants severely degraded mangroves in the
-                Ayeyarwady region of Myanmar. The project's developer is
-                Worldview International Foundation, one of the world's most
+                Ayeyarwady region of Myanmar. The project&apos;s developer is
+                Worldview International Foundation, one of the world&apos;s most
                 respected eco heroes. Founded in 1979, it established national
                 parks in Myanmar and Sri Lanka, planted tens of millions of
                 trees, and provided hundreds of jobs on a regular basis.
               </p>
 
               <p className="text-[14px] lg:text-[19px] lg:mt-10 mt-5">
-                To ensure the project's long term sustainability, WIF uses a
-                community-based model to educate and employ locals, to provide
+                To ensure the project&apos;s long term sustainability, WIF uses
+                a community-based model to educate and employ locals, to provide
                 scholarships and help schools, to support families and gender
                 equality.
               </p>
