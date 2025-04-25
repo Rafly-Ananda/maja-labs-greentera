@@ -338,7 +338,7 @@ export default function Home() {
               rehabilitation and restoration efforts led by PT ABL and Maja
               Corp. It seeks to demonstrate their commitment to environmental
               stewardship and future generations through collective climate
-              action. By highlighting the TERA program's scalability, it
+              action. By highlighting the TERA program&apos;s scalability, it
               encourages replication in other coastal areas across Indonesia.
               The initiative also empowers Gen Z to stay engaged in
               environmental issues and fosters discussions for innovative,
