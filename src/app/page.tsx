@@ -138,12 +138,13 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Nfts */}
       <div className="mt-10 flex items-center justify-center flex-col rounded-xl lg:p-16">
         <h1 className="font-[family-name:var(--font-playfair)] text-[22px] lg:text-5xl text-center">
           Featured NFTs
         </h1>
 
-        <div className="grid grid-cols-5 grid-rows-2 gap-5 mt-10">
+        <div className="grid grid-cols-2 lg:grid-cols-5 lg:grid-rows-2 gap-5 mt-10">
           {nftImages.map((e, i) => (
             <div
               key={i}
@@ -462,8 +463,8 @@ export default function Home() {
           Powered By
         </h1>
 
-        <div className="flex m-10 items-center justify-center gap-10">
-          <Image src={ablLogo} width={150} height={100} alt="abl logo" />
+        <div className="flex m-10 flex-col lg:flex-row items-center justify-center gap-10">
+          <Image src={ablLogo} width={100} height={100} alt="abl logo" />
           <Image src={majaCorpLogo} width={250} height={100} alt="maja corp" />
         </div>
       </div>
