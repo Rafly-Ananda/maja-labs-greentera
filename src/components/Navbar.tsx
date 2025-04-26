@@ -57,7 +57,7 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <button className="uppercase text-[0.85rem] bg-[#f5dfeb] rounded-3xl px-4 py-3 font-medium w-fit hover:cursor-pointer">
+          <button className="uppercase text-[0.85rem] bg-[#fbcf01] rounded-3xl px-4 py-3 font-medium w-fit hover:cursor-pointer">
             participate
           </button>
         </div>
@@ -73,7 +73,7 @@ const Navbar = () => {
           />
 
           <div className="flex items-center z-50">
-            <button className="uppercase text-[10px] bg-[#f291c9] rounded-full lg:rounded-3xl px-[12px] py-[6px] font-medium w-fit h-fit z-50 text-white">
+            <button className="uppercase text-[10px] bg-[#fbcf01] rounded-full lg:rounded-3xl px-[12px] py-[6px] font-medium w-fit h-fit z-50 text-white">
               participate
             </button>
             <div>
@@ -106,7 +106,7 @@ const Navbar = () => {
 
               <li className="absolute bottom-6">
                 <ul className="flex flex-col items-center justify-center font-[family-name:var(--font-hanken)] text-[12px] lg:text-lg font-light lg:hidden">
-                  <li>&copy; 2025 Greenterra Project.</li>
+                  <li>&copy; 2025 Greentera Project.</li>
                   <li>All rights reserved.</li>
                 </ul>
               </li>

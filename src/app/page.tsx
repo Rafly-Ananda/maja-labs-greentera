@@ -1,4 +1,4 @@
-import LogoTransition from '@/assets/terra-logo.png';
+// import LogoTransition from '@/assets/terra-logo.png';
 import projectImage from '@/assets/carbon-projects.png';
 // import Point from '@/assets/point.svg';
 import ablLogo from '@/assets/abl-logo.png';
@@ -49,7 +49,7 @@ export default function Home() {
       <div className="pt-[50px] lg:pt-[85px]"></div>
 
       {/* Main Section */}
-      <div className="bg-[#f5dfeb] rounded-xl flex items-center justify-center flex-col text-center lg:pt-28 lg:px-20 lg:pb-16 p-5">
+      <div className="bg-[#fbcf01] rounded-xl flex items-center justify-center flex-col text-center lg:pt-28 lg:px-20 lg:pb-16 p-5">
         <ul className="font-[family-name:var(--font-playfair)] text-[24px] lg:text-6xl text-[#222533] hidden lg:block">
           <li>Driving mangrove restoration</li>
           <li>with blockchain-powered</li>
@@ -97,9 +97,14 @@ export default function Home() {
 
       {/* Token Explanation */}
       <div className="lg:mt-20 mt-10 flex items-center justify-center flex-col">
-        <div className="lg:w-[64px] lg:h-[64px] w-[32px] h-[32px] relative">
+        {/* <div className="lg:w-[64px] lg:h-[64px] w-[32px] h-[32px] relative">
           <Image src={LogoTransition} layout="fill" alt="Nav Logo" />
-        </div>
+        </div> */}
+
+        <h1 className="font-[family-name:var(--font-playfair)] text-[22px] lg:text-5xl text-center font-bold">
+          <span className="text-[#52703b]">GREEN</span>
+          <span className="text-[#fbcf01]">TERA</span>
+        </h1>
 
         <ul className="font-[family-name:var(--font-playfair)] text-[20px] lg:text-4xl text-center text-[#222533] lg:leading-12 mt-6">
           <li>Mangrove-Backed Token is a joint project</li>
@@ -155,13 +160,13 @@ export default function Home() {
           ))}
         </div>
 
-        <button className="uppercase text-[0.85rem] bg-[#f5dfeb] rounded-3xl px-10 py-3 font-medium w-fit mt-10">
+        <button className="uppercase text-[0.85rem] bg-[#fbcf01] rounded-3xl px-10 py-3 font-medium w-fit mt-10">
           Get NFTs
         </button>
       </div>
 
       {/* Details */}
-      <div className="mt-10 flex items-center justify-center flex-col bg-[#f0f0f0] rounded-xl p-8 lg:p-16">
+      <div className="mt-10 flex items-center justify-center flex-col bg-[#fbcf01] rounded-xl p-8 lg:p-16">
         <div className="flex items-start justify-start w-full">
           <h1 className="font-[family-name:var(--font-playfair)] text-[22px] lg:text-5xl text-left">
             Details
@@ -260,7 +265,7 @@ export default function Home() {
       </div> */}
 
       {/* Mangrove Project */}
-      <div className="bg-[#e1f2f0] rounded-xl flex flex-col items-center justify-center text-center lg:pt-28 lg:px-20 lg:pb-16 relative mt-10 lg:mt-20 p-5 pb-10">
+      <div className="bg-[#fbcf01] rounded-xl flex flex-col items-center justify-center text-center lg:pt-28 lg:px-20 lg:pb-16 relative mt-10 lg:mt-20 p-5 pb-10">
         <div>
           <div className="w-full lg:w-[60%] px-4 lg:pt-20 pt-5">
             <h1 className="font-[family-name:var(--font-playfair)] text-[22px] lg:text-5xl text-center">
@@ -311,7 +316,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-white lg:mt-14 mt-10 w-full h-full rounded-xl p-10">
+        <div className="bg-[#52703b] lg:mt-14 mt-10 w-full h-full rounded-xl p-10 text-white">
           <h2 className="font-[family-name:var(--font-playfair)] text-[16px] lg:text-2xl">
             Targeted Goals
           </h2>
@@ -437,7 +442,7 @@ export default function Home() {
       </div> */}
 
       {/* Powered By */}
-      <div className="mt-14 flex items-center justify-center flex-col bg-[#f0f0f0] rounded-xl p-16">
+      <div className="mt-14 flex items-center justify-center flex-col bg-[#52703b] rounded-xl p-16 text-white">
         <h1 className="font-[family-name:var(--font-playfair)] text-[22px] lg:text-5xl text-center">
           Powered By
         </h1>
@@ -451,11 +456,11 @@ export default function Home() {
       {/* Footer */}
       <div className="mt-5 lg:mt-14 h-[100px] flex items-center justify-center lg:just-between">
         <h4 className="font-[family-name:var(--font-hanken)] text-[12px] lg:text-lg font-light hidden lg:block">
-          &copy; 2025 Greenterra Project. All rights reserved.
+          &copy; 2025 Greentera Project. All rights reserved.
         </h4>
 
         <ul className="flex flex-col items-center justify-center font-[family-name:var(--font-hanken)] text-[12px] lg:text-lg font-light lg:hidden">
-          <li>&copy; 2025 Greenterra Project.</li>
+          <li>&copy; 2025 Greentera Project.</li>
           <li>All rights reserved.</li>
         </ul>
       </div>
