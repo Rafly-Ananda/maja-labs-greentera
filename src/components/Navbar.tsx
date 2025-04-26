@@ -57,7 +57,7 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <button className="uppercase text-[0.85rem] bg-[#f5dfeb] rounded-3xl px-4 py-3 font-medium w-fit">
+          <button className="uppercase text-[0.85rem] bg-[#f5dfeb] rounded-3xl px-4 py-3 font-medium w-fit hover:cursor-pointer">
             participate
           </button>
         </div>

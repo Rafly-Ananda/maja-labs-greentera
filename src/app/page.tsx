@@ -1,19 +1,19 @@
 import LogoTransition from '@/assets/terra-logo.png';
 import projectImage from '@/assets/carbon-projects.png';
-import Point from '@/assets/point.svg';
+// import Point from '@/assets/point.svg';
 import ablLogo from '@/assets/abl-logo.png';
 import majaCorpLogo from '@/assets/maja-corp.png';
 
-import nft_1 from '@/assets/nfts/41.png';
-import nft_2 from '@/assets/nfts/42.png';
-import nft_3 from '@/assets/nfts/43.png';
-import nft_4 from '@/assets/nfts/44.png';
-import nft_5 from '@/assets/nfts/45.png';
-import nft_6 from '@/assets/nfts/46.png';
-import nft_7 from '@/assets/nfts/47.png';
-import nft_8 from '@/assets/nfts/48.png';
-import nft_9 from '@/assets/nfts/49.png';
-import nft_10 from '@/assets/nfts/50.png';
+import nft_1 from '@/assets/nfts/9.png';
+import nft_2 from '@/assets/nfts/10.png';
+import nft_3 from '@/assets/nfts/11.png';
+import nft_4 from '@/assets/nfts/12.png';
+import nft_5 from '@/assets/nfts/13.png';
+import nft_6 from '@/assets/nfts/14.png';
+import nft_7 from '@/assets/nfts/21.png';
+import nft_8 from '@/assets/nfts/22.png';
+import nft_9 from '@/assets/nfts/23.png';
+import nft_10 from '@/assets/nfts/26.png';
 
 import { HiArrowSmallRight } from 'react-icons/hi2';
 
@@ -154,10 +154,14 @@ export default function Home() {
             </div>
           ))}
         </div>
+
+        <button className="uppercase text-[0.85rem] bg-[#f5dfeb] rounded-3xl px-10 py-3 font-medium w-fit mt-10">
+          Get NFTs
+        </button>
       </div>
 
       {/* Details */}
-      <div className="mt-10 lg:mt-20 flex items-center justify-center flex-col bg-[#f0f0f0] rounded-xl p-8 lg:p-16">
+      <div className="mt-10 flex items-center justify-center flex-col bg-[#f0f0f0] rounded-xl p-8 lg:p-16">
         <div className="flex items-start justify-start w-full">
           <h1 className="font-[family-name:var(--font-playfair)] text-[22px] lg:text-5xl text-left">
             Details
@@ -309,58 +313,35 @@ export default function Home() {
 
         <div className="bg-white lg:mt-14 mt-10 w-full h-full rounded-xl p-10">
           <h2 className="font-[family-name:var(--font-playfair)] text-[16px] lg:text-2xl">
-            Project carbon curve
+            Targeted Goals
           </h2>
 
-          <ul className="flex items-center justify-center mt-10 text-5xl gap-10 font-[family-name:var(--font-montserrat)] font-medium">
-            <li className="flex flex-col">
-              <span className="text-[#186f64] lg:text-[48px] text-[24px] font-[family-name:var(--font-hanken)]">
-                1,509,0999
-              </span>
-              <span className="uppercase text-sm mt-4 font-[family-name:var(--font-hanken)] font-light lg:text-[14px]">
-                total estimated
-              </span>
-            </li>
-            <li className="flex flex-col">
-              <span className="text-[#e85531] lg:text-[48px] text-[24px] font-[family-name:var(--font-hanken)]">
-                109,017
-              </span>
-              <span className="uppercase text-sm mt-4 font-[family-name:var(--font-hanken)] font-light lg:text-[14px]">
-                total issued
-              </span>
-            </li>
-          </ul>
-        </div>
-
-        <div className="lg:w-[65%] px-4 lg:pt-10">
-          <div className="font-[family-name:var(--font-hanken)] mt-10 font-light">
-            <p className="text-[14px] lg:text-[19px] mt-10">
-              The program aims to raise stakeholder awareness about sustainable
-              rehabilitation and restoration efforts led by PT ABL and Maja
-              Corp. It seeks to demonstrate their commitment to environmental
-              stewardship and future generations through collective climate
-              action. By highlighting the TERA program&apos;s scalability, it
-              encourages replication in other coastal areas across Indonesia.
-              The initiative also empowers Gen Z to stay engaged in
-              environmental issues and fosters discussions for innovative,
-              long-term solutions to protect the planet.
-            </p>
-
-            <p className="hover:cursor-pointer uppercase mt-10 font-medium lg:text-base text-[10px]">
-              Public pledge
-            </p>
+          <div className="px-4">
+            <div className="font-[family-name:var(--font-hanken)] mt-10 font-light">
+              <p className="text-[14px] lg:text-[19px] mt-10">
+                The program aims to raise stakeholder awareness about
+                sustainable rehabilitation and restoration efforts led by PT ABL
+                and Maja Corp. It seeks to demonstrate their commitment to
+                environmental stewardship and future generations through
+                collective climate action. By highlighting the TERA
+                program&apos;s scalability, it encourages replication in other
+                coastal areas across Indonesia. The initiative also empowers Gen
+                Z to stay engaged in environmental issues and fosters
+                discussions for innovative, long-term solutions to protect the
+                planet.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Roadmap */}
-      <div className="mt-10 flex items-center justify-center flex-col rounded-xl lg:p-16">
+      {/* <div className="mt-10 flex items-center justify-center flex-col rounded-xl lg:p-16">
         <h1 className="font-[family-name:var(--font-playfair)] text-[22px] lg:text-5xl text-center">
           Roadmap
         </h1>
 
         <ul className="mt-5 lg:mt-20 w-fit">
-          {/* Milestone 1 */}
           <li className="flex">
             <div className="text-[#f291c9] font-[family-name:var(--font-playfair)] text-[15px] lg:text-3xl lg:mr-20 mr-5 font-semibold w-[100px]">
               Current
@@ -392,7 +373,6 @@ export default function Home() {
             </div>
           </li>
 
-          {/* Milestone 2 */}
           <li className="flex mt-5">
             <div className="text-[#f291c9] font-[family-name:var(--font-playfair)] text-[15px] lg:text-3xl lg:mr-20 mr-5 font-semibold w-[100px]">
               Next
@@ -424,7 +404,6 @@ export default function Home() {
             </div>
           </li>
 
-          {/* Milestone 3 */}
           <li className="flex mt-5">
             <div className="text-[#f291c9] font-[family-name:var(--font-playfair)] text-[15px] lg:text-3xl lg:mr-20 mr-5 font-semibold w-[100px]">
               Future
@@ -455,7 +434,7 @@ export default function Home() {
             </div>
           </li>
         </ul>
-      </div>
+      </div> */}
 
       {/* Powered By */}
       <div className="mt-14 flex items-center justify-center flex-col bg-[#f0f0f0] rounded-xl p-16">
