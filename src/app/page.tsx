@@ -160,9 +160,12 @@ export default function Home() {
           ))}
         </div>
 
-        <button className="uppercase text-[0.85rem] bg-[#fbcf01] rounded-3xl px-10 py-3 font-medium w-fit mt-10">
+        <a
+          className="hover:cursor-pointer text-[0.85rem] bg-[#fbcf01] rounded-3xl px-10 py-3 font-medium w-fit mt-10 font-[family-name:var(--font-montserrat)]"
+          href="https://opensea.io/collection/greentera-mangrove"
+        >
           Get NFTs
-        </button>
+        </a>
       </div>
 
       {/* Details */}
