@@ -35,10 +35,10 @@ export default function RootLayout({
       <body
         className={`${montserrat.variable} ${playfair.variable} ${hanken.variable} antialiased`}
       >
-        <div className="flex flex-col items-center justify-between relative">
+        {/* <div className="flex flex-col items-center justify-between relative">
           <Navbar />
           {children}
-        </div>
+        </div> */}
       </body>
     </html>
   );
