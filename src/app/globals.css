@@ -1,1 +1,13 @@
 @import 'tailwindcss';
+
+* {
+  box-sizing: border-box;
+  scroll-margin-top: 10vh; /* default for mobile */
+}
+
+@media (min-width: 768px) {
+  /* For tablets and up (desktop) */
+  * {
+    scroll-margin-top: 5vh;
+  }
+}

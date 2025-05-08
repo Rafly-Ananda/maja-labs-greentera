@@ -5,17 +5,22 @@ import Image from 'next/image';
 
 import Hamburger from 'hamburger-react';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, FC, RefObject } from 'react';
 
-const navLinks = ['about', 'details', 'mangrove project', 'roadmap'];
+const navLinks = ['about', 'details', 'mangrove project'];
 
-const Navbar = () => {
+type ComponentProps = {
+  aboutRef: RefObject<HTMLDivElement | null>;
+  detailsRef: RefObject<HTMLDivElement | null>;
+  mangroveProjectref: RefObject<HTMLDivElement | null>;
+};
+
+const Navbar: FC<ComponentProps> = (props) => {
   const [burgerClicked, setBurgerClicked] = useState<boolean>(false);
 
   const topOfPageRef = useRef<HTMLElement>(null);
 
   const scrollToTop = () => {
-    console.log('clicked');
     const { current } = topOfPageRef;
 
     console.log(current);
@@ -26,6 +31,35 @@ const Navbar = () => {
 
     setBurgerClicked(false);
   };
+
+  const scrollToAbout = () => {
+    const { current } = props.aboutRef;
+
+    if (current) {
+      current.scrollIntoView({ behavior: 'smooth' });
+    }
+    setBurgerClicked(false);
+  };
+
+  const scrollToDetails = () => {
+    const { current } = props.detailsRef;
+
+    if (current) {
+      current.scrollIntoView({ behavior: 'smooth' });
+    }
+    setBurgerClicked(false);
+  };
+
+  const scrollToMangroveProject = () => {
+    const { current } = props.mangroveProjectref;
+
+    if (current) {
+      current.scrollIntoView({ behavior: 'smooth' });
+    }
+    setBurgerClicked(false);
+  };
+
+  const navHandler = [scrollToAbout, scrollToDetails, scrollToMangroveProject];
 
   useEffect(() => {
     setBurgerClicked(false);
@@ -41,8 +75,8 @@ const Navbar = () => {
           <ul className="flex items-center justify-center gap-10 w-fit">
             <Image
               src={NavLogo}
-              width={40}
-              height={40}
+              width={60}
+              height={60}
               alt="Nav Logo"
               onClick={scrollToTop}
               className="hover:cursor-pointer"
@@ -51,6 +85,7 @@ const Navbar = () => {
               <li
                 className=" uppercase text-[0.85rem] hover:cursor-pointer"
                 key={e + i}
+                onClick={navHandler[i]}
               >
                 {e}
               </li>
@@ -70,6 +105,7 @@ const Navbar = () => {
             height={32}
             alt="Nav Logo"
             className="z-50"
+            onClick={scrollToTop}
           />
 
           <div className="flex items-center z-50">
@@ -91,17 +127,23 @@ const Navbar = () => {
             }`}
           >
             <ul className="flex flex-col items-center justify-center gap-6 w-screen h-screen relative">
-              <li className="text-[22px] font-[family-name:var(--font-playfair)]">
+              <li
+                className="text-[22px] font-[family-name:var(--font-playfair)]"
+                onClick={scrollToAbout}
+              >
                 About
               </li>
-              <li className="text-[22px] font-[family-name:var(--font-playfair)]">
+              <li
+                className="text-[22px] font-[family-name:var(--font-playfair)]"
+                onClick={scrollToDetails}
+              >
                 Details
               </li>
-              <li className="text-[22px] font-[family-name:var(--font-playfair)]">
+              <li
+                className="text-[22px] font-[family-name:var(--font-playfair)]"
+                onClick={scrollToMangroveProject}
+              >
                 Mangrove Project
-              </li>
-              <li className="text-[22px] font-[family-name:var(--font-playfair)]">
-                Roadmap
               </li>
 
               <li className="absolute bottom-6">
